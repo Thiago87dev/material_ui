@@ -16,7 +16,9 @@ import SendIcon from "@mui/icons-material/Send";
 
 const Basico = () => {
   return (
-    <Container sx={{ bgcolor: "black", color: "white",}} maxWidth="lg">
+    <Container  maxWidth="lg">
+      <Typography variant="h1">Básico</Typography>
+      <Divider orientation="horizontal" sx={{bgcolor:'white', mb:4}}/>
       {/* Textos */}
       <Typography>Textos</Typography>
       <Typography variant="h1">Hello World</Typography>
@@ -29,7 +31,7 @@ const Basico = () => {
       </Typography>
 
       {/* Botões */}
-      <Typography>Botões</Typography>
+      <Typography sx={{ mt: 4 }}>Botões</Typography>
       <Box sx={{ display: "flex", gap: 2 }}>
         <Button variant="contained">Padrão</Button>
         <Button variant="outlined" color="secondary">
@@ -53,7 +55,7 @@ const Basico = () => {
       </Box>
 
       {/* Icones */}
-      <Typography>Icones</Typography>
+      <Typography sx={{ mt: 4 }}>Icones</Typography>
       <Box sx={{ display: "flex", gap: 2 }}>
         <Button startIcon={<DeleteIcon />} variant="contained" color="primary">
           Apagar
@@ -64,7 +66,7 @@ const Basico = () => {
       </Box>
 
       {/* Avatar e Badge */}
-      <Typography>Avatar e Badge</Typography>
+      <Typography sx={{ mt: 4 }}>Avatar e Badge</Typography>
       <Box
         sx={{ bgcolor: "tomato", display: "flex", gap: 2, width: 400, p: 4 }}
       >
@@ -86,7 +88,7 @@ const Basico = () => {
       </Box>
 
       {/* Divider e Paper */}
-      <Typography>Divider e Paper</Typography>
+      <Typography sx={{ mt: 4 }}>Divider e Paper</Typography>
       <Paper elevation={3} sx={{ p: 2 }}>
         <Typography>Bloco de sombra</Typography>
         <Divider sx={{ my: 2 }} />
@@ -94,7 +96,7 @@ const Basico = () => {
       </Paper>
 
       {/* Card */}
-      <Typography>Card</Typography>
+      <Typography sx={{ mt: 4 }}>Card</Typography>
       <Box>
         <Card sx={{ maxWidth: 300 }}>
           <CardMedia
@@ -113,7 +115,7 @@ const Basico = () => {
       </Box>
 
       {/* imagens */}
-      <Typography> Imagens</Typography>
+      <Typography sx={{ mt: 4 }}> Imagens</Typography>
       <Box sx={{ display: "flex", gap: 2, bgcolor: "gray", px: 4 }}>
         <Box>
           <Typography>Img com Box</Typography>
@@ -162,7 +164,7 @@ const Basico = () => {
         </Box>
       </Box>
     </Container>
-  )
-}
+  );
+};
 
-export default Basico
+export default Basico;

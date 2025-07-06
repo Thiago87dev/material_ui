@@ -1,6 +1,7 @@
-import { Container, Link } from "@mui/material";
+import { Container } from "@mui/material";
 
-import { Link as RouterLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
@@ -15,22 +16,7 @@ const App = () => {
       }}
       maxWidth="lg"
     >
-      <Link
-        component={RouterLink}
-        to="/Basico"
-        underline="hover"
-        sx={{ fontSize: "1.2rem", px:3}}
-      >
-        Ir para Basico
-      </Link>
-      <Link
-        component={RouterLink}
-        to="/LayoutEPosicionamento"
-        underline="hover"
-        sx={{ fontSize: "1.2rem",px:3 }}
-      >
-        Ir para Layout e Posicionamento
-      </Link>
+      <Navbar />
 
       <Outlet />
     </Container>
