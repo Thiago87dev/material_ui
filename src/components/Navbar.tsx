@@ -54,7 +54,9 @@ const Navbar = () => {
         </Button>
         <Box>
           <Button onClick={(e) => setAnchorEl(e.currentTarget)}>
-            <Box sx={{display:'flex', fontSize: "1rem", px: 1, color: "white" }}>
+            <Box
+              sx={{ display: "flex", fontSize: "1rem", px: 1, color: "white" }}
+            >
               <Typography>Formulários</Typography>
               <KeyboardArrowDownIcon />
             </Box>
@@ -69,7 +71,7 @@ const Navbar = () => {
                 component={RouterLink}
                 to="/Formulario"
                 underline="none"
-                sx={{ fontSize: "1.2rem", color: "black" }}
+                sx={{ fontSize: "1.2rem", color: "white" }}
               >
                 Material UI
               </Link>
@@ -79,7 +81,7 @@ const Navbar = () => {
                 component={RouterLink}
                 to="/Formik"
                 underline="none"
-                sx={{ fontSize: "1.2rem", color: "black" }}
+                sx={{ fontSize: "1.2rem", color: "white" }}
               >
                 Formik
               </Link>

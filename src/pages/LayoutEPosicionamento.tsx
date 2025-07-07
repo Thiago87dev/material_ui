@@ -11,7 +11,7 @@ import {
 
 const LayoutEPosicionamento = () => {
   return (
-    <Container sx={{ bgcolor: "black", color: "white" }} maxWidth="lg">
+    <Container  maxWidth="lg">
       <Typography variant="h1">Layout e posicionamento</Typography>
       <Divider orientation="horizontal" sx={{bgcolor:'white', mb:4}}/>
       {/* Sistema de Grid do MUI */}

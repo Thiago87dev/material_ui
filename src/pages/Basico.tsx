@@ -21,7 +21,7 @@ const Basico = () => {
       <Divider orientation="horizontal" sx={{bgcolor:'white', mb:4}}/>
       {/* Textos */}
       <Typography>Textos</Typography>
-      <Typography variant="h1">Hello World</Typography>
+      <Typography  variant="h1">Hello World</Typography>
       <Typography variant="h4" gutterBottom>
         Subtítulo H4 com espaçamento
       </Typography>
@@ -116,7 +116,7 @@ const Basico = () => {
 
       {/* imagens */}
       <Typography sx={{ mt: 4 }}> Imagens</Typography>
-      <Box sx={{ display: "flex", gap: 2, bgcolor: "gray", px: 4 }}>
+      <Box sx={{ display: "flex", gap: 2, bgcolor: "blue", px: 4 }}>
         <Box>
           <Typography>Img com Box</Typography>
           <Box

@@ -23,13 +23,13 @@ const FormularioComYup = () => {
   });
   return (
     <Box
-      sx={{ bgcolor: "white", p: 2 }}
+      sx={{ p: 2 }}
       component="form"
       onSubmit={formik.handleSubmit}
       noValidate
     >
-        <Typography variant="body1" color="black">Formulário com Yup para validação</Typography>
-        <Typography variant="body2" color="black">Com Yup</Typography>
+        <Typography variant="body1" >Formulário com Yup para validação</Typography>
+        <Typography variant="body2" >Com Yup</Typography>
       <TextField
         fullWidth
         id="nome"

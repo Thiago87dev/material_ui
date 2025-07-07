@@ -181,6 +181,7 @@ const Navegacao = () => {
             sx={{
               color: "white",
               border: "1px solid white",
+              bgcolor:'green',
               ":hover": {
                 bgcolor: "white",
                 color: "black",

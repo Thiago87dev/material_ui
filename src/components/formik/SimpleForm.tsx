@@ -12,9 +12,9 @@ const SimpleForm = () => {
     },
   });
   return (
-    <form style={{backgroundColor:'white', padding:'16px'}} onSubmit={formik.handleSubmit}>
-        <Typography variant="body1" color="black">Formulário simples</Typography>
-        <Typography variant="body2" color="black">Ainda não tem validações nem exibição de erros</Typography>
+    <form style={{ padding:'16px'}} onSubmit={formik.handleSubmit}>
+        <Typography variant="body1" >Formulário simples</Typography>
+        <Typography variant="body2" >Ainda não tem validações nem exibição de erros</Typography>
       <TextField
         fullWidth
         id="name"

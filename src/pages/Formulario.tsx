@@ -33,7 +33,7 @@ const Formulario = () => {
   const opcoes = ["React", "Vue", "Angular"];
 
   return (
-    <Container sx={{ bgcolor: "gray", pb: 20 }} maxWidth="lg">
+    <Container sx={{ pb: 20 }} maxWidth="lg">
       <Typography variant="h1">Formulários</Typography>
       <Divider orientation="horizontal" sx={{bgcolor:'white', mb:4}}/>
       {/* TextField */}

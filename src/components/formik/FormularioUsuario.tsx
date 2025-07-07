@@ -27,9 +27,9 @@ const FormularioUsuario = () => {
     },
   });
   return (
-    <form style={{backgroundColor:'white', padding:'16px'}} onSubmit={formik.handleSubmit}>
-        <Typography variant="body1" color="black">Formulário com validação manual</Typography>
-        <Typography variant="body2" color="black">Sem Yup, ainda</Typography>
+    <form style={{ padding:'16px'}} onSubmit={formik.handleSubmit}>
+        <Typography variant="body1" >Formulário com validação manual</Typography>
+        <Typography variant="body2" >Sem Yup, ainda</Typography>
       <TextField
         fullWidth
         id="nome"
