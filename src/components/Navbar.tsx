@@ -14,7 +14,9 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
+  const [anchorElReducer, setAnchorElReducer] = useState<HTMLButtonElement | null>(null);
   const open = Boolean(anchorEl);
+  const openReducer = Boolean(anchorElReducer);
 
   return (
     <AppBar position="static">
@@ -52,6 +54,54 @@ const Navbar = () => {
             Navegação
           </Link>
         </Button>
+
+        <Box>
+          <Button onClick={(e) => setAnchorElReducer(e.currentTarget)}>
+            <Box
+              sx={{ display: "flex", fontSize: "1rem", px: 1, color: "white" }}
+            >
+              <Typography>useReducer</Typography>
+              <KeyboardArrowDownIcon />
+            </Box>
+          </Button>
+          <Menu
+            anchorEl={anchorElReducer}
+            open={openReducer}
+            onClose={() => setAnchorElReducer(null)}
+          >
+            <MenuItem onClick={() => setAnchorElReducer(null)}>
+              <Link
+                component={RouterLink}
+                to="/UseReducerPage"
+                underline="none"
+                sx={{ fontSize: "1.2rem", color: "white" }}
+              >
+                Basico
+              </Link>
+            </MenuItem>
+            <MenuItem onClick={() => setAnchorElReducer(null)}>
+              <Link
+                component={RouterLink}
+                to="/UseReducerEstruturaPage"
+                underline="none"
+                sx={{ fontSize: "1.2rem", color: "white" }}
+              >
+                Estrutura
+              </Link>
+            </MenuItem>
+            <MenuItem onClick={() => setAnchorEl(null)}>
+            <Link component={RouterLink} to={'/UseReducerToDoPage'} underline="none" sx={{ fontSize: "1.2rem", color: "white" }}>
+              To-Do
+            </Link>
+            </MenuItem>
+            <MenuItem onClick={() => setAnchorEl(null)}>
+            <Link component={RouterLink} to={'/UseReducerToDoPage2'} underline="none" sx={{ fontSize: "1.2rem", color: "white" }}>
+              To-Do 2
+            </Link>
+            </MenuItem>
+          </Menu>
+        </Box>
+
         <Box>
           <Button onClick={(e) => setAnchorEl(e.currentTarget)}>
             <Box
